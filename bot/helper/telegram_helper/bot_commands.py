@@ -19,6 +19,9 @@ class _BotCommands:
         self.HelpCommand = 'help'
         self.LogCommand = 'log'
         self.CloneCommand = 'clone'
+        self.QbMirrorCommand = 'qbmirror'
+        self.QbUnzipMirrorCommand = 'qbunzip'
+        self.QbZipMirrorCommand = 'qbzip'
         self.DeleteCommand = 'del'
 
 BotCommands = _BotCommands()
