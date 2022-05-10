@@ -368,7 +368,7 @@ def _mirror(bot, update, isZip=False, extract=False, isQbit=False, isLeech=False
     if not bot_utils.is_url(link) and not bot_utils.is_magnet(link) and not os.path.exists(link):
         halp_msg = "<b>haha noob</b>"
         return sendMessage(halp_msg, bot, update)
-    elif not bot_utils.is_mega_link(link) and not isQbit and not bot_utils.is_magnet(link) \
+    elif not isQbit and not bot_utils.is_magnet(link) \
          and not os.path.exists(link) and not bot_utils.is_gdrive_link(link):
         try:
             link = direct_link_generator(link)
